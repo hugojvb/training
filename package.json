@@ -1,0 +1,22 @@
+{
+	"name": "starter-nest-react",
+	"version": "1.0.0",
+	"description": "Made for a quick start in full stack projects using Nest and React",
+	"main": "index.js",
+	"scripts": {
+		"dev": "concurrently \"cd backend && nest start \" \"cd frontend && npm start\" "
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hugojvb/starter-nest-react.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/hugojvb/starter-nest-react/issues"
+	},
+	"homepage": "https://github.com/hugojvb/starter-nest-react#readme",
+	"devDependencies": {
+		"concurrently": "^6.3.0"
+	}
+}
