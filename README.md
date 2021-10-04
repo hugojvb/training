@@ -8,7 +8,7 @@ Made for a quick start in full stack projects using Nest(Node framework) and Rea
 
 2. Run **npm run install** in root directory
 
-##### Backend Additional Dependencies:
+### Backend Additional Dependencies:
 
 -   TypeORM
 -   Swagger
@@ -21,7 +21,7 @@ Made for a quick start in full stack projects using Nest(Node framework) and Rea
 -   Passport
 -   Passport-local
 
-##### Frontend Additional Dependencies:
+### Frontend Additional Dependencies:
 
 -   Typescript
 -   Material-ui
