@@ -6,9 +6,9 @@ Made for a quick start in full stack projects using Nest(Node framework) and Rea
 
 1. Clone the project
 
-2. Run **npm run install** in root directory
+2. Run **npm i** in root directory
 
-### Backend Additional Dependencies:
+### Backend Additional Libraries:
 
 -   TypeORM
 -   Swagger
@@ -21,7 +21,7 @@ Made for a quick start in full stack projects using Nest(Node framework) and Rea
 -   Passport
 -   Passport-local
 
-### Frontend Additional Dependencies:
+### Frontend Additional Libraries:
 
 -   Typescript
 -   Material-ui
