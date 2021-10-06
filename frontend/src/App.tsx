@@ -4,6 +4,7 @@ import React from "react";
 import { CacheProvider } from "@emotion/react";
 import createCache from "@emotion/cache";
 import CssBaseline from "@mui/material/CssBaseline";
+import Routing from "./Routing";
 
 function App() {
 	return (
@@ -12,11 +13,12 @@ function App() {
 				<div className="App">
 					<AppBar position="sticky" color="primary">
 						<Toolbar>
-							<Typography variant="h6">Hello</Typography>
+							<Typography variant="h6">Navbar</Typography>
 						</Toolbar>
 					</AppBar>
 					<h1>Ready to go!</h1>
 				</div>
+				<Routing />
 				<CssBaseline />
 			</ThemeProvider>
 		</CacheProvider>
