@@ -1,6 +1,6 @@
 # Starter for Nest with React
 
-Made for a quick start in full stack projects using Nest(Node framework) and React, ideal for a i/o intensive backend and a dynamic frontend.
+Made for a quick start in full stack projects using Nest (Node framework) and React, ideal for an i/o intensive backend and a dynamic frontend.
 
 ### Installation:
 
