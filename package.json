@@ -3,9 +3,13 @@
 	"version": "1.0.0",
 	"description": "Made for a quick start in full stack projects using Nest and React",
 	"main": "index.js",
+	"workspaces": [
+		"frontend",
+		"backend"
+	],
 	"scripts": {
-		"dev": "concurrently \"cd backend && npm run start:debug  \" \"cd frontend && npm start\" ",
-		"install": "concurrently \"cd backend && npm install \" \"cd frontend && npm install\" "
+		"dev": "npm run start --workspaces",
+		"install": "npm install --workspaces"
 	},
 	"repository": {
 		"type": "git",
