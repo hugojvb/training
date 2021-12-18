@@ -6,6 +6,10 @@ services:
         restart: always
         environment:
             - POSTGRES_ROOT_PASSWORD="secret"
+        volumes:
+            - data-volume:/data/db
+        networks:
+            - app-network
     backend:
         image: backend
         build:
@@ -24,12 +28,30 @@ services:
         restart: always
         ports:
             - "5000:5000"
+        networks:
+            - app-network
     frontend:
         image: frontend
-        build: ./frontend
+        build:
+            context: ./frontend
+            dockerfile: Dockerfile
+        command: npm start
+        volumes:
+            - ./frontend/:/app
+            - /app/node_modules
         depends_on:
             - backend
         container_name: training/frontend
         restart: always
         ports:
             - "3000:3000"
+        networks:
+            - app-network
+networks:
+    app-network:
+        driver: bridge
+volumes:
+    data-volume:
+    node_modules:
+    web-root:
+        driver: local
