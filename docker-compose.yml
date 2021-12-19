@@ -15,12 +15,11 @@ services:
         build:
             context: ./backend
             dockerfile: Dockerfile
-        container_name: training/backend
+        container_name: backend
         command: npm start
         volumes:
             - ./backend/:/app
             - /app/node_modules
-        env_file: ./backend/.env
         environment:
             - NODE_ENV=development
         depends_on:
@@ -41,7 +40,7 @@ services:
             - /app/node_modules
         depends_on:
             - backend
-        container_name: training/frontend
+        container_name: frontend
         restart: always
         ports:
             - "3000:3000"
